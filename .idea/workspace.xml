@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a77ad66-1028-4b83-b099-1c18c4e5a2fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/HomePage/HomePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/configureStore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/cocktailActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CocktailCard/CocktailCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CocktailsForVodka/CocktailsForVodka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/Loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/NotFound.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/cockTailReducers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +59,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612047932980</updated>
-      <workItem from="1612047934267" duration="1154000" />
+      <workItem from="1612047934267" duration="7870000" />
+      <workItem from="1612066611799" duration="1593000" />
     </task>
     <servers />
   </component>
@@ -69,6 +77,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
