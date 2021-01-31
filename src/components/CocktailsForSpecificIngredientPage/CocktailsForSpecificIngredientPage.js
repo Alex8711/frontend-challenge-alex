@@ -2,15 +2,16 @@ import React, {useEffect} from 'react';
 import {Row, Col, Container} from 'react-bootstrap';
 import {useDispatch, useSelector} from "react-redux";
 import Loader from '../shared/Loader'
-import {listCocktailsForVodka} from '../../actions/cocktailActions'
+import {listCocktailsForSpecificIngredient} from '../../actions/cocktailActions'
 import CocktailCard from "../CocktailCard/CocktailCard";
 
-const CocktailsForVodka = () => {
+const CocktailsForSpecificIngredientPage = () => {
     const dispatch = useDispatch();
-    const {cocktails, loading, errors} = useSelector(state => state.cocktailsForVodkaList);
+    const {cocktails, loading, errors} = useSelector(state => state.cocktailsForSpecificIngredientList);
+    const {ingredient} = useSelector(state => state.ingredientName);
     useEffect(() => {
-        dispatch(listCocktailsForVodka());
-    }, [dispatch]);
+        dispatch(listCocktailsForSpecificIngredient(ingredient));
+    }, [dispatch,ingredient]);
     return (
         <>
             {loading ? (<Loader/>) : (
@@ -30,4 +31,4 @@ const CocktailsForVodka = () => {
     )
 }
 
-export default CocktailsForVodka;
+export default CocktailsForSpecificIngredientPage;

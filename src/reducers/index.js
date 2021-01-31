@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
-import {cocktailsForVodkaListReducer,cocktailsForGinListReducer,ingredientNameReducer} from './cockTailReducers';
+import {cocktailsForSpecificIngredientListReducer,cocktailDetailsReducer,ingredientNameReducer} from './cocktailReducers';
 
 
 const rootReducers = combineReducers({
-    cocktailsForVodkaList:cocktailsForVodkaListReducer,
-    cocktailsForGinList:cocktailsForGinListReducer,
+    cocktailsForSpecificIngredientList:cocktailsForSpecificIngredientListReducer,
+    cocktailDetails:cocktailDetailsReducer,
     ingredientName:ingredientNameReducer
 });
 

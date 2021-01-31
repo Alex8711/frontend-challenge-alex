@@ -16,22 +16,21 @@ const Header = ({location}) => {
                 <Navbar.Brand >Navbar</Navbar.Brand>
                 </LinkContainer>
                 <Nav className="mr-auto" activeKey={location.pathname}>
-                    <LinkContainer to="/vodka" onClick={()=>{dispatch(setIngredientName("vodka"))}}>
+                    <LinkContainer to="/cocktail/vodka" onClick={()=>{dispatch(setIngredientName("vodka"))}}>
                     <Nav.Link >Vodka</Nav.Link>
                    </LinkContainer>
-                    <LinkContainer to="/gin" onClick={()=>{dispatch(setIngredientName("gin"))}}>
+                    <LinkContainer to="/cocktail/gin" onClick={()=>{dispatch(setIngredientName("gin"))}}>
                         <Nav.Link >Gin</Nav.Link>
                     </LinkContainer>
-                    <LinkContainer to="/rum" onClick={()=>{dispatch(setIngredientName("rum"))}}>
+                    <LinkContainer to="/cocktail/rum" onClick={()=>{dispatch(setIngredientName("rum"))}}>
                         <Nav.Link >Rum</Nav.Link>
                     </LinkContainer>
-                    <LinkContainer to="/scotch" onClick={()=>{dispatch(setIngredientName("scotch"))}}>
+                    <LinkContainer to="/cocktail/scotch" onClick={()=>{dispatch(setIngredientName("scotch"))}}>
                         <Nav.Link >Scotch</Nav.Link>
                     </LinkContainer>
-                    <LinkContainer to="/brandy" onClick={()=>{dispatch(setIngredientName("brandy"))}}>
+                    <LinkContainer to="/cocktail/brandy" onClick={()=>{dispatch(setIngredientName("brandy"))}}>
                         <Nav.Link >Brandy</Nav.Link>
                     </LinkContainer>
-                    {ingredient}
                 </Nav>
             </Navbar>
         </>
