@@ -5,13 +5,13 @@ import Loader from '../shared/Loader'
 import {listCocktailsForSpecificIngredient} from '../../actions/cocktailActions'
 import CocktailCard from "../CocktailCard/CocktailCard";
 
-const CocktailsForSpecificIngredientPage = () => {
+const CocktailsForSpecificIngredientPage = ({match}) => {
     const dispatch = useDispatch();
-    const {cocktails, loading, errors} = useSelector(state => state.cocktailsForSpecificIngredientList);
-    const {ingredient} = useSelector(state => state.ingredientName);
+    const {cocktails, loading} = useSelector(state => state.cocktailsForSpecificIngredientList);
+    const ingredientNameFromUrl = match.params.ingredientName;
     useEffect(() => {
-        dispatch(listCocktailsForSpecificIngredient(ingredient));
-    }, [dispatch,ingredient]);
+        dispatch(listCocktailsForSpecificIngredient(ingredientNameFromUrl));
+    }, [dispatch, ingredientNameFromUrl]);
     return (
         <>
             {loading ? (<Loader/>) : (

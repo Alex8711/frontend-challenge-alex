@@ -43,12 +43,3 @@ export const cocktailDetailsById = (id) => {
     };
 };
 
-
-export const setIngredientName = (name) => {
-    return (dispatch) => {
-        dispatch({
-            type: "CHOOSE_INGREDIENT",
-            payload: name
-        })
-    }
-}

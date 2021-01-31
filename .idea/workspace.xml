@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a77ad66-1028-4b83-b099-1c18c4e5a2fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/CocktailDetailPage/CocktailDetailPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/cocktailActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/cocktailActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CocktailCard/CocktailCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CocktailCard/CocktailCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CocktailsForVodka/CocktailsForVodka.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CocktailsForSpecificIngredientPage/CocktailsForSpecificIngredientPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CocktailDetailPage/CocktailDetailPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CocktailDetailPage/CocktailDetailPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CocktailsForSpecificIngredientPage/CocktailsForSpecificIngredientPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CocktailsForSpecificIngredientPage/CocktailsForSpecificIngredientPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/HomePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/shared/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/cockTailReducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/cocktailReducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/Loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/NotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/NotFound.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/cocktailReducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/cocktailReducers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +30,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1noEEcMjUuowdEsbyE5qapYXeYL" />
   <component name="ProjectLevelVcsManager">
@@ -58,7 +69,8 @@
       <option name="presentableId" value="Default" />
       <updated>1612047932980</updated>
       <workItem from="1612047934267" duration="7870000" />
-      <workItem from="1612066611799" duration="7392000" />
+      <workItem from="1612066611799" duration="7935000" />
+      <workItem from="1612074633634" duration="3027000" />
     </task>
     <servers />
   </component>

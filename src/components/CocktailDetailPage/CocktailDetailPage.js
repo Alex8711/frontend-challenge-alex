@@ -1,5 +1,5 @@
 import React from "react";
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 import {
     Container,
     Col,
@@ -7,9 +7,7 @@ import {
     Card,
     ListGroup,
     Button,
-    Form,
 } from "react-bootstrap";
-import {LinkContainer} from "react-router-bootstrap";
 import {useHistory} from "react-router-dom";
 import Loader from "../shared/Loader"
 import {useDispatch, useSelector} from "react-redux";
@@ -20,11 +18,10 @@ const CocktailDetailPage = ({match}) => {
     const dispatch = useDispatch();
     const history = useHistory();
     const {details, loading} = useSelector(state => state.cocktailDetails)
-    /*const cocktailId = details.idDrink;*/
     const cocktailId = match.params.id;
     useEffect(() => {
         dispatch(cocktailDetailsById(cocktailId));
-    }, [dispatch]);
+    }, [dispatch, cocktailId]);
 
     return (
         <>
@@ -47,20 +44,20 @@ const CocktailDetailPage = ({match}) => {
                             <ListGroup.Item>
                                 <h5>Ingredients
                                     :</h5> {details.strIngredient1}
-                                {details.strIngredient2?",":""}{details.strIngredient2}
-                                {details.strIngredient3?",":""}{details.strIngredient3}
-                                {details.strIngredient4?",":""}{details.strIngredient4}
-                                {details.strIngredient5?",":""}{details.strIngredient5}
-                                {details.strIngredient6?",":""}{details.strIngredient6}
-                                {details.strIngredient7?",":""}{details.strIngredient7}
-                                {details.strIngredient8?",":""}{details.strIngredient8}
-                                {details.strIngredient9?",":""}{details.strIngredient9}
-                                {details.strIngredient10?",":""}{details.strIngredient10}
-                                {details.strIngredient11?",":""}{details.strIngredient11}
-                                {details.strIngredient12?",":""}{details.strIngredient12}
-                                {details.strIngredient13?",":""}{details.strIngredient13}
-                                {details.strIngredient14?",":""}{details.strIngredient14}
-                                {details.strIngredient15?",":""}{details.strIngredient15}
+                                {details.strIngredient2 ? "," : ""}{details.strIngredient2}
+                                {details.strIngredient3 ? "," : ""}{details.strIngredient3}
+                                {details.strIngredient4 ? "," : ""}{details.strIngredient4}
+                                {details.strIngredient5 ? "," : ""}{details.strIngredient5}
+                                {details.strIngredient6 ? "," : ""}{details.strIngredient6}
+                                {details.strIngredient7 ? "," : ""}{details.strIngredient7}
+                                {details.strIngredient8 ? "," : ""}{details.strIngredient8}
+                                {details.strIngredient9 ? "," : ""}{details.strIngredient9}
+                                {details.strIngredient10 ? "," : ""}{details.strIngredient10}
+                                {details.strIngredient11 ? "," : ""}{details.strIngredient11}
+                                {details.strIngredient12 ? "," : ""}{details.strIngredient12}
+                                {details.strIngredient13 ? "," : ""}{details.strIngredient13}
+                                {details.strIngredient14 ? "," : ""}{details.strIngredient14}
+                                {details.strIngredient15 ? "," : ""}{details.strIngredient15}
                             </ListGroup.Item>
 
                         </ListGroup>
