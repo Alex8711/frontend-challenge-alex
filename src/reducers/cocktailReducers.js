@@ -1,9 +1,9 @@
-export const cocktailsForSpecificIngredientListReducer = (state = {cocktails: []}, action) => {
+export const cocktailsForSpecificIngredientListReducer = (state = {cocktails: [],error: null}, action) => {
     switch (action.type) {
         case "COCKTAILS_SPECIFIC_INGREDIENT_LIST_REQUEST":
-            return {loading: true, cocktails: []};
+            return {loading: true, cocktails: [],error: null};
         case "COCKTAILS_SPECIFIC_INGREDIENT_LIST_SUCCESS":
-            return {loading: false, cocktails: action.payload};
+            return {loading: false, cocktails: action.payload,error: null};
 
         case "COCKTAILS_SPECIFIC_INGREDIENT_LIST_FAIL":
             return {loading: false, error: action.payload};

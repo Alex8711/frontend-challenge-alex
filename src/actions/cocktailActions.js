@@ -10,12 +10,10 @@ export const listCocktailsForSpecificIngredient = (ingredient) => {
                 payload: data.drinks,
             });
         } catch (error) {
+            console.log(error);
             dispatch({
                 type: "COCKTAILS_SPECIFIC_INGREDIENT_LIST_FAIL",
-                payload:
-                    error.response && error.response.data.message
-                        ? error.response.data.message
-                        : error.response,
+                payload: error
             });
         }
     }
@@ -34,10 +32,7 @@ export const cocktailDetailsById = (id) => {
         } catch (error) {
             dispatch({
                 type: "COCKTAIL_DETAILS_FAIL",
-                payload:
-                    error.response && error.response.data.message
-                        ? error.response.data.message
-                        : error.response,
+                payload: error
             });
         }
     }

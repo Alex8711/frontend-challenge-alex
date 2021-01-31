@@ -12,6 +12,7 @@ import {useHistory} from "react-router-dom";
 import Loader from "../shared/Loader";
 import {useDispatch, useSelector} from "react-redux";
 import {cocktailDetailsById} from "../../actions/cocktailActions";
+import styles from "./CocktailDetailPage.module.css";
 
 
 const CocktailDetailPage = ({match}) => {
@@ -20,9 +21,12 @@ const CocktailDetailPage = ({match}) => {
     const {details, loading} = useSelector(state => state.cocktailDetails);
     const cocktailId = match.params.id;
     useEffect(() => {
-        dispatch(cocktailDetailsById(cocktailId));
-    }, [dispatch, cocktailId]);
-
+        dispatch(cocktailDetailsById(cocktailId)).catch(error => {
+            history.push("/notfound");
+        });
+    }, [dispatch, cocktailId,history]);
+    if(!details)
+    return<h2>Not Found</h2>
     return (
         <>
             {loading ? (<Loader/>) : (<Container>
@@ -42,8 +46,9 @@ const CocktailDetailPage = ({match}) => {
                                 <h3>{details.strDrink}</h3>{" "}
                             </ListGroup.Item>
                             <ListGroup.Item>
-                                <h5>Ingredients
-                                    :</h5> {details.strIngredient1}
+                                <h5>Ingredients :</h5>
+                                <p className={styles.textCocktailIngredient}>
+                                {details.strIngredient1}
                                 {details.strIngredient2 ? "," : ""}{details.strIngredient2}
                                 {details.strIngredient3 ? "," : ""}{details.strIngredient3}
                                 {details.strIngredient4 ? "," : ""}{details.strIngredient4}
@@ -58,6 +63,7 @@ const CocktailDetailPage = ({match}) => {
                                 {details.strIngredient13 ? "," : ""}{details.strIngredient13}
                                 {details.strIngredient14 ? "," : ""}{details.strIngredient14}
                                 {details.strIngredient15 ? "," : ""}{details.strIngredient15}
+                                </p>
                             </ListGroup.Item>
 
                         </ListGroup>
@@ -66,7 +72,7 @@ const CocktailDetailPage = ({match}) => {
                 <Row>
                     <ListGroup className="my-3" variant="flush">
                         <ListGroup.Item variant="success">
-                            Instructions: {details.strInstructions}
+                           <p className={styles.textCocktailInstruction}>Instructions: {details.strInstructions}</p>
                         </ListGroup.Item>
                     </ListGroup>
                 </Row>

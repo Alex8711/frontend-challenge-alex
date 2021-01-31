@@ -4,15 +4,22 @@ import {useDispatch, useSelector} from "react-redux";
 import Loader from "../shared/Loader";
 import {listCocktailsForSpecificIngredient} from "../../actions/cocktailActions";
 import CocktailCard from "../CocktailCard/CocktailCard";
+import {useHistory} from "react-router-dom";
 import styles from "./CocktailsForSpecificIngredientPage.module.css";
 
 const CocktailsForSpecificIngredientPage = ({match}) => {
     const dispatch = useDispatch();
+    const history = useHistory();
     const {cocktails, loading} = useSelector(state => state.cocktailsForSpecificIngredientList);
     const ingredientNameFromUrl = match.params.ingredientName;
     useEffect(() => {
-        dispatch(listCocktailsForSpecificIngredient(ingredientNameFromUrl));
-    }, [dispatch, ingredientNameFromUrl]);
+        dispatch(listCocktailsForSpecificIngredient(ingredientNameFromUrl)).catch((error) => {
+            history.push("/notfound");
+        });
+
+    }, [dispatch, ingredientNameFromUrl, history]);
+    if (!cocktails)
+        return <h2>Not Found</h2>
     return (
         <>
             {loading ? (<Loader/>) : (
@@ -27,9 +34,8 @@ const CocktailsForSpecificIngredientPage = ({match}) => {
                     </Row>
                 </Container>
             )}
-
         </>
     )
-}
+};
 
 export default CocktailsForSpecificIngredientPage;

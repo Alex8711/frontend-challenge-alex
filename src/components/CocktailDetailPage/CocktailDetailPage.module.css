@@ -1,0 +1,11 @@
+.textCocktailInstruction {
+    color: #0d0d0d;
+    font-size: large;
+    font-weight: 15;
+}
+
+.textCocktailIngredient {
+    color: #0d0d0d;
+    font-size: medium;
+    font-weight: 15;
+}

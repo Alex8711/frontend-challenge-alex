@@ -16,6 +16,7 @@ const App = () => {
                     <Route path="/" exact component={HomePage}/>
                     <Route path="/cocktail/detail/:id" exact component={CocktailDetailPage}/>
                     <Route path="/cocktail/:ingredientName" exact component={CocktailsForSpecificIngredientPage}/>
+                    <Route path="/notfound" exact component={NotFound}/>
                     <Route component={NotFound}/>
                 </Switch>
             </Router>
