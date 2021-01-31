@@ -18,8 +18,8 @@ export const listCocktailsForSpecificIngredient = (ingredient) => {
                         : error.response,
             });
         }
-    };
-};
+    }
+}
 
 export const cocktailDetailsById = (id) => {
     return async (dispatch) => {
@@ -40,6 +40,6 @@ export const cocktailDetailsById = (id) => {
                         : error.response,
             });
         }
-    };
-};
+    }
+}
 

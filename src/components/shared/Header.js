@@ -1,5 +1,5 @@
-import React from 'react';
-import {Navbar, Nav} from 'react-bootstrap';
+import React from "react";
+import {Navbar, Nav} from "react-bootstrap";
 import {withRouter} from "react-router";
 import {LinkContainer} from "react-router-bootstrap";
 
@@ -22,7 +22,6 @@ const Header = ({location}) => {
                                 )
                             )
                         }
-
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

@@ -9,15 +9,15 @@ import {
     Button,
 } from "react-bootstrap";
 import {useHistory} from "react-router-dom";
-import Loader from "../shared/Loader"
+import Loader from "../shared/Loader";
 import {useDispatch, useSelector} from "react-redux";
-import {cocktailDetailsById} from '../../actions/cocktailActions'
+import {cocktailDetailsById} from "../../actions/cocktailActions";
 
 
 const CocktailDetailPage = ({match}) => {
     const dispatch = useDispatch();
     const history = useHistory();
-    const {details, loading} = useSelector(state => state.cocktailDetails)
+    const {details, loading} = useSelector(state => state.cocktailDetails);
     const cocktailId = match.params.id;
     useEffect(() => {
         dispatch(cocktailDetailsById(cocktailId));
@@ -70,7 +70,7 @@ const CocktailDetailPage = ({match}) => {
                         </ListGroup.Item>
                     </ListGroup>
                 </Row>
-            </Container>)}
+            </Container>)};
         </>
     )
 }

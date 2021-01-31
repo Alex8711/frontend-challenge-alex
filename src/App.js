@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import HomePage from "./components/HomePage/HomePage";
 import CocktailsForSpecificIngredientPage
-    from './components/CocktailsForSpecificIngredientPage/CocktailsForSpecificIngredientPage';
-import CocktailDetailPage from './components/CocktailDetailPage/CocktailDetailPage';
+    from "./components/CocktailsForSpecificIngredientPage/CocktailsForSpecificIngredientPage";
+import CocktailDetailPage from "./components/CocktailDetailPage/CocktailDetailPage";
 import Header from "./components/shared/Header";
 import NotFound from "./components/shared/NotFound";
 
@@ -20,7 +20,7 @@ const App = () => {
                 </Switch>
             </Router>
         </>
-    );
+    )
 }
 
 export default App;

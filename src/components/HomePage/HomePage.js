@@ -3,8 +3,6 @@ import {Row, Container, ListGroup} from "react-bootstrap";
 
 
 const HomePage = () => {
-
-
     return (
         <>
             <Container>
@@ -21,11 +19,8 @@ const HomePage = () => {
                             <p>You also can click on a cocktail to get more detailed information about it</p>
                         </ListGroup.Item>
                     </ListGroup>
-
-
                 </Row>
             </Container>
-
         </>
     )
 }
