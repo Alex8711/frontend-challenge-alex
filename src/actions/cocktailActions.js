@@ -12,7 +12,6 @@ export const listCocktailsForSpecificIngredient = (ingredient) => {
         payload: data.drinks,
       });
     } catch (error) {
-      console.log(error);
       dispatch({
         type: "COCKTAILS_SPECIFIC_INGREDIENT_LIST_FAIL",
         payload: error,
