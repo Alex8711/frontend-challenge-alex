@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a77ad66-1028-4b83-b099-1c18c4e5a2fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/CocktailDetailPage/CocktailDetailPage.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/HomePage/HomePage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CocktailDetailPage/CocktailDetailPage.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CocktailsForSpecificIngredientPage/CocktailsForSpecificIngredientPage.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/cocktailActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/cocktailActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CocktailDetailPage/CocktailDetailPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CocktailDetailPage/CocktailDetailPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CocktailsForSpecificIngredientPage/CocktailsForSpecificIngredientPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CocktailsForSpecificIngredientPage/CocktailsForSpecificIngredientPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CocktailsForSpecificIngredientPage/CocktailsForSpecificIngredientPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CocktailsForSpecificIngredientPage/CocktailsForSpecificIngredientPage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/cocktailReducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/cocktailReducers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -57,6 +49,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="C:\Users\liuzh\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\203.7148.54\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -71,7 +64,7 @@
       <workItem from="1612047934267" duration="7870000" />
       <workItem from="1612066611799" duration="7935000" />
       <workItem from="1612074633634" duration="3447000" />
-      <workItem from="1612115983952" duration="12988000" />
+      <workItem from="1612115983952" duration="16529000" />
     </task>
     <servers />
   </component>
@@ -92,5 +85,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
