@@ -13,9 +13,7 @@ const CocktailDetailPage = ({ match }) => {
   const { details, loading } = useSelector((state) => state.cocktailDetails);
   const cocktailId = match.params.id;
   useEffect(() => {
-    dispatch(cocktailDetailsById(cocktailId)).catch((error) => {
-      history.push("/notfound");
-    });
+    dispatch(cocktailDetailsById(cocktailId));
   }, [dispatch, cocktailId, history]);
   if (!details) return <h2>Not Found</h2>;
   return (

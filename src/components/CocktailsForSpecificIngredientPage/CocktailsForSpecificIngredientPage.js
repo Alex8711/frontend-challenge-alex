@@ -15,11 +15,7 @@ const CocktailsForSpecificIngredientPage = ({ match }) => {
   );
   const ingredientNameFromUrl = match.params.ingredientName;
   useEffect(() => {
-    dispatch(listCocktailsForSpecificIngredient(ingredientNameFromUrl)).catch(
-      (error) => {
-        history.push("/notfound");
-      }
-    );
+    dispatch(listCocktailsForSpecificIngredient(ingredientNameFromUrl));
   }, [dispatch, ingredientNameFromUrl, history]);
   if (!cocktails) return <h2>Not Found</h2>;
   return (

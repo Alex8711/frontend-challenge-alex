@@ -1,4 +1,5 @@
 import axios from "axios";
+import { push } from "connected-react-router";
 
 export const listCocktailsForSpecificIngredient = (ingredient) => {
   return async (dispatch) => {
@@ -16,6 +17,7 @@ export const listCocktailsForSpecificIngredient = (ingredient) => {
         type: "COCKTAILS_SPECIFIC_INGREDIENT_LIST_FAIL",
         payload: error,
       });
+      dispatch(push("/notfound"));
     }
   };
 };
@@ -37,6 +39,7 @@ export const cocktailDetailsById = (id) => {
         type: "COCKTAIL_DETAILS_FAIL",
         payload: error,
       });
+      dispatch(push("/notfound"));
     }
   };
 };
